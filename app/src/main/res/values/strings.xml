@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Royale Draft</string>
-    <string name="royale_drafter">Royale Drafter!</string>
+    <string name="royale_drafter">0</string>
+    <string name="left_button">Toast</string>
+    <string name="middle_button">Count</string>
+    <string name="right_button">Random</string>
 </resources>
