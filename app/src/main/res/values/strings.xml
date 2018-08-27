@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Royale Draft</string>
-    <string name="royale_drafter">0</string>
+    <string name="royale_drafter">Player Name</string>
+    <string name="player_name" />
     <string name="left_button">Toast</string>
     <string name="middle_button">Count</string>
     <string name="right_button">Random</string>
+    <string name="gamer_tag">2V8QGRRL</string>
+    <string name="search">Search</string>
+    <string name="NON_EXISTENT_PLAYER">Player does not exist.</string>
+    <string name="trophies">Trophies</string>
+    <string name="trophies_result">Trophies</string>
 </resources>
