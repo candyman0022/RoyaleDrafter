@@ -5,6 +5,6 @@ data class Player(val tag: String, val name:String, val expLevel:Int, val trophi
                   val threeCrownWins:Int, val challengeCardsWon:Int, val challengeMaxWins:Int,
                   val tournamentCardsWon:Int, val tournamentBattleCount:Int, val role:String,
                   val donations:Int, val donationsReceived:Int, val totalDonations:Int,
-                  val warDayWins:Int,val clanCardsCollected:Int) {
+                  val warDayWins:Int,val clanCardsCollected:Int, val cards:List<Cards>) {
 }
 

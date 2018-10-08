@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("my_tag", "click!")
 
         val client = OkHttpClient()
-        val editText:EditText = findViewById<EditText>(R.id.editText)
+        val editText:EditText = findViewById(R.id.editText)
         val request = Request.Builder()
                 .url(URLUtils.playerULR(editText.getText().toString()))
                 .addHeader("Authorization", URLUtils.APIToken())
@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
 
                 this@MainActivity.runOnUiThread {
                     val ricardo = JSONUtils.getPlayerObjectFromJson(response.body()!!.string())
-                    val editViewPlayerName:TextView = findViewById<TextView>(R.id.playerNameResult)
-                    val editViewTrophies:TextView = findViewById<TextView>(R.id.trophiesResult)
+                    val editViewPlayerName:TextView = findViewById(R.id.playerNameResult)
+                    val editViewTrophies:TextView = findViewById(R.id.trophiesResult)
                     if(ricardo.name != null) {
                         editViewPlayerName.text = ricardo.name
                         editViewTrophies.text = ricardo.trophies.toString()
@@ -49,8 +49,6 @@ class MainActivity : AppCompatActivity() {
                         editViewPlayerName.text = getString(R.string.NON_EXISTENT_PLAYER)
                         editViewTrophies.text = ""
                     }
-
-
                 }
             }
         })
